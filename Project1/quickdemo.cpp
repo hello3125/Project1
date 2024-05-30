@@ -5,10 +5,10 @@ using namespace cv;
 using namespace std;
 
 void QuickDemo::colorSpace_Demo(Mat &image)
-{
+{  
 	Mat gray, hsv;
 	cvtColor(image, hsv, COLOR_BGR2HSV);
-	// H 0 ~ 180, S, V 
+	// H 0 ~ 180, S, V 0-100
 	cvtColor(image, gray, COLOR_BGR2GRAY);
 	namedWindow("HSV", WINDOW_FREERATIO);
 	namedWindow("»Ò¶È", WINDOW_FREERATIO);
