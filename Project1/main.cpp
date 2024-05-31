@@ -7,7 +7,7 @@ using namespace cv;
 
 int main(int argc, char *argv[])
 {
-	Mat img = imread("C:/Users/Lenovo/Pictures/4c194b7df1a241789d49338ec423804d.jpg");
+	Mat img = imread("D:/test/school.jpg");
 	if (img.empty())
 	{
 		cout << "could not load image" << endl;
@@ -17,10 +17,13 @@ int main(int argc, char *argv[])
 	imshow("输入窗口", img);//显示图片
 
 	QuickDemo qd;
-	qd.colorSpace_Demo(img);
+	/*qd.colorSpace_Demo(img);*/
+
+	qd.mat_creation_demo(img);
 
 	waitKey(0);//等待按键
-	destroyAllWindows();//销毁前面出纳宫颈癌
+	destroyAllWindows();
+
 	
 	return 0;
 }
